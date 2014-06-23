@@ -1,0 +1,6 @@
+*.synctex.gz
+*.out
+*.log
+*.aux
+/cuttsCV.bcf
+/cuttsCV.run.xml
