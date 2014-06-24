@@ -134,9 +134,9 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{p{.15\textwidth} p{.85\textwidth}}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
@@ -147,7 +147,7 @@
     #4\vspace{\parsep}%
   }\\}
 \newcommand{\projectentry}[2]{%
-   \parbox[t]{13.1cm}{%
+   &\parbox[t]{12.9cm}{%
     \textbf{#1}\\%
     #2\vspace{\parsep}%
   }\\}
@@ -167,6 +167,20 @@
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
   \begin{textblock}{3.6}(0.5, 4.33)
+  \begin{flushright}
+  \obeycr
+}{%
+  \restorecr
+  \end{flushright}
+  \end{textblock}
+  \let\section\oldsection
+}
+\newenvironment{asidenoheader}{%
+  \let\oldsection\section
+  \renewcommand{\section}[1]{
+    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+  }
+  \begin{textblock}{3.6}(0.5, 1.33)
   \begin{flushright}
   \obeycr
 }{%
