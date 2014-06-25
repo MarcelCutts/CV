@@ -4,3 +4,4 @@
 *.aux
 /cuttsCV.bcf
 /cuttsCV.run.xml
+*.synctex.gz(busy)
