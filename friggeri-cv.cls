@@ -134,9 +134,14 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{p{.15\textwidth} p{.85\textwidth}}
 }{%
-  \end{tabular*}
+  \end{longtable}
+}
+\newenvironment{projectentrylist}{%
+  \begin{longtable}{p{1\textwidth}}
+}{%
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%

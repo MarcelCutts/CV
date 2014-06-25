@@ -22,7 +22,7 @@
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
-
+\usepackage{longtable}
 \begin{document}
 
 \header{marcel}{cutts}{full-stack engineer} % Your name and current job title/field
@@ -58,9 +58,9 @@ UX, UCD
 
 Full stack developer blended with client facing consultancy experience.
 
-From stacking together a PC salvaged parts to popular web applications, over the years I have absorbed technologies and systems making me a capable generalist. My thirst for learning endures, and I will continue to take skills and knowledge hostage into the future. 
+From stacking together a PC from salvaged parts to popular web applications, over the years I have absorbed technologies and systems making me a capable generalist. My thirst for learning endures, and I will continue to take knowledge hostage into the future. 
 
-When not sat behind a computer, I mostly climb rocks, fight heavy people, trek across the arctic and play guitar talentlessly.
+When not sat behind a computer for work or for fun, I mostly climb rocks, fight heavy people, trek across the arctic and play guitar talentlessly.
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -90,7 +90,7 @@ When not sat behind a computer, I mostly climb rocks, fight heavy people, trek a
 {Tessella}
 {Oxford, United Kingdom}
 {\emph{Analyst Developer} \\
-During my time at Tessella I have had opportunities to work on an exceptional variety of development and consultancy projects across domains. This has ranged from designing and implementing large scale n-tier applications to analysing and advising on processes in the consumer industry and client negotiations.\\
+During my time at Tessella I have had opportunities to work on an exceptional variety of development and consultancy projects across domains. This has ranged from designing and implementing large scale n-tier applications to analysing and advising on processes in the consumer industry.\\
 Internally, I have championed new technologies and methodologies, as well as led small teams and mentoring developers.} 
 %------------------------------------------------
 \entry
@@ -98,9 +98,7 @@ Internally, I have championed new technologies and methodologies, as well as led
 {Deutsches Elektronen-Synchrotron}
 {Hamburg, Germany}
 {\emph{Particle Physicist} \\
-My efforts at the DESY  institute focused on designing and implementing additions to
-the proposed International Linear Accelerator software framework, which are intended to graphically review
-and manipulate high volumes of complex data. In addition, I regularly gave presentations to international audiences to promote scientific updates from the department.} 
+My efforts at the DESY institute focused on combining knowledge of physics and programming ability to contribute to an upcoming particle accelerator, the International Linear Collider. As part of my role, I regularly gave presentations to international audiences to promote scientific updates from the department and attended numerous specialised lectures.} 
 %------------------------------------------------
 \entry
 {2009--2010}
@@ -108,8 +106,8 @@ and manipulate high volumes of complex data. In addition, I regularly gave prese
 {London, United Kingdom}
 {\emph{Research and Development Scientist} \\
 De La Rue allowed me contribute to upcoming security
-products across many areas of science. Throughout I developed my own ideas, including a python based image analysis suite that I pioneered, creating a quality assurance process and provided previously unavailable abilities to the research division. \\
-In addition, I participated in desiging, prototyping and refining oncoming products, including  work in holographics, polymer development, photonic crystals and printed electronics.}
+products across many areas of science. Throughout I developed my own ideas, mostly within the realm of software, but also within materials science and optics. \\
+Within the broader team, I participated in designing, prototyping and refining oncoming products, including work in holographics, polymer development, photonic crystals and printed electronics. }
 %------------------------------------------------
 \entry
 {2004-2010}
@@ -126,57 +124,52 @@ Number of roles during younger years ranging from park keeper to bar tender.}
 
 \newpage
 \section{selection of relevant experience}
-This section would normally contain a selection of experience relevant to a particular position, but as this edition will be public available on the web, I have included a varied assortment of projects below instead. \\
-\\
-\begin{entrylist}
+This section would normally contain a selection of experience relevant to a particular position, but as this edition will be public available on the web, I have included a varied assortment of projects below instead. 
+
+\begin{projectentrylist}
 %------------------------------------------------
 \projectentry
 {Data sandbox -  visualisation and analytical engines}
 {\emph{JavaScript, Python, D3, HTML5/CSS3, Bottle, Jasmine, SqlLite, UX} \\
-An academic institute is currently running a birth cohort study, in which the goal is to track a hundred thousand women and families through stages of pregnancy and the first year of the child’s life. This will provide novel scientific data detailing  child development throughout different populations throughout the UK.
-A number of issues needed attention, however primarily there was no quantitative system for predicting recruitment of participants and the costs outcome of potential cohort study plans. Due to the number of stakeholders, there are a large number of possible parameters to consider, who's impact needs to be known before changes can be made.
-
-To accommodate this, I developed an interactive visualisation. This lets the users play with the data and aspects of the plan, and see real-time updates to participant and cost metrics in an intuitive way. This is achieved through a rich JS client on the front end and a performant python bottle server handling computational and modelling aspects. As not all users would be academically inclined and stakeholders would share an interest, a fierce amount of attention was kept on the design and user experience.
-
-Consequently, this gave the institute the power to not only quickly, but confidently make decisions in a time constrained field. Additionally, due to the design efforts, it found a secondary purpose as presentation tool for displaying figures and scenarios externally.}
-\end{entrylist}
+An academic institute is currently running a national birth cohort study investigating 100,000 people over a number of years. My role as an analyst and developer was to provide quantitative feedback which outlined the possible impact of study steering decisions. \\
+Once I had begun to understand the domain and the needs of the various stakeholders, I created and refined software that allowed the institute to visually play with their data and parameters in real-time, receiving instant feedback on their potential decisions through detailed predictive metrics.\\
+I created this system through a strong JavaScript front-end utilising D3 and other libraries, and python for numerical work on the back-end. This was achieved using a number of agile methodologies which I later expanded the use of within the study as a whole to help the institute adapt more rapidly to changing requirements. \\
+Consequently, this gave the institute the power to not only quickly, but confidently make decisions in a time constrained field. As an additional bonus, due to the design efforts, it found a secondary purpose as presentation tool for displaying figures and scenarios externally.}
 
 %------------------------------------------------
-\begin{entrylist}
 \projectentry
 {Pharmaceutical portal}
 {\emph{C\#, MSSQL, Entity Framework, MVC4, nUnit, nSubstitute, WF, WCF, Unity, CI} \\
-The portal offers a number of services providing speciality pharmaceuticals, including a Global Access Program which is intended to provide unlicensed or trial-phase drugs to patients in need, internationally and domestically. A solution was required to handle requesting, validation, procurement shipping and tracking of these drugs by health care professionals, via pharmaceutical suppliers, while fulfilling all necessary industry regulations. As the software gained clients, complex analytics and reporting were developed to aid in overseeing the complex pharmaceutical chain.
-
-A web-based application was created, by myself in a small scrum team, to satisfy these requirements. The resulted is a highly accessible portal for users and clients, which automated several previously manual processes. This allowed the client to rapidly expand its program range with minimal additional effort.}
-\end{entrylist}
+The portal offers a number of services providing speciality pharmaceuticals, including
+a Global Access Program which is intended to provide unlicensed or trial-phase drugs
+to patients in need, internationally and domestically.\\
+A solution was required to handle
+requesting, validation, procurement, shipping and tracking of these drugs by health care
+professionals, via pharmaceutical suppliers, while fulfilling all necessary industry regulations. As the software gained clients, analytics and reporting were developed
+to aid in overseeing the complex pharmaceutical chain. \\
+A web-based application was created, by myself in a small scrum team, to satisfy these
+requirements. We used an MVVM architecture built on .Net’s MVC4 framework as the foundation and applied principles of agile, with rigorous unit testing and continuous integration testing throughout. \\
+The result is a highly accessible portal for users and clients, which automated several previously manual processes. This allowed the client to rapidly expand
+its program range with minimal additional effort.}
 %------------------------------------------------
 
-\begin{entrylist}
 \projectentry
 {Domain name and SSL}
-{\emph{Java, WCF, Selenium, jUnit, nUnit, Oracle, PLSQL } \\
+{\emph{C\#, asp.Net WCF, Selenium, jUnit, nUnit, Oracle, PLSQL } \\
 This project consisted of two core tasks: the creation of a full-stack web application to allow users to manage their domains independently and inclusion of new Domain Name System Security Extensions (DNSSEC) to secure domains against more modern forms of malicious network attacks.
-
+\\
 The work involved alterations at the database level, writing packages to handle data directly into large currently existing Oracle systems  and front end user design. Alongside the application, a background web service was developed with WCF to allow other departments within the organisation to use the functionality of the application without having to write it themselves. All tasks were completed using continuous integration featuring both unit and front end testing.
-
+\\
 The application has proven popular, handling all certificate and domain name issues for the organisation, increasing their product range and allowing the organisation to free up a large number of resources for other critical projects.}
-\end{entrylist}
 
-
-\begin{entrylist}
 \projectentry
 {County force intelligence and tasking system}
 {\emph{C\#, Sharepoint, nUnit, MS SQL, networking} \\
 A number of country police forces use a central system to brief and organise their resources and tasks. A number of new features and tools were requested to be implemented in the current system, based on Sharepoint 2007 platform.
 
 The current system had been built and expanded in an ad-hoc impromptu manner; a well architected re-implementation was suggested, and while SharePoint was not the best possible platform for their needs, external forces existed ensuring its use. I created a modular decoupled architecture to best serve their current needs and offer clean separation and extensibility in the future. Alongside the core technical tasks, I introduced and automated deployment methods, advised on hardware issues, and trained the clients on future maintenance and use of the delivered system.}
-\end{entrylist}
 
-
-
-
-
+\end{projectentrylist}
 
 
 %----------------------------------------------------------------------------------------
