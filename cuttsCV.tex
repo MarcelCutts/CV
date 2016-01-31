@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This CV is a heavily modified version of the below author's work. 
+% Many thanks - your TeX skills are far beyond my own.
+% 
 % Friggeri Resume/CV
 % XeLaTeX Template
 % Version 1.0 (5/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
 %
 % Original author:
 % Adrien Friggeri (adrien@friggeri.net)
@@ -25,7 +25,7 @@
 \usepackage{longtable}
 \begin{document}
 
-\header{marcel}{cutts}{full-stack engineer} % Your name and current job title/field
+\header{marcel}{cutts}{full-stack engineer} %  Name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -44,9 +44,16 @@ English fluency
 German basic
 \section{programming}
 Python, JavaScript
+Ruby, Elm, Swift
 C\#, Java, C++
-SQL, PLSQL
+SQL, PLSQL, noSQL
 CSS3 \& HTML5
+\section{favourite tech}
+Microservices,
+React / Flux
+WebSockets
+Functional things
+Immersive UX
 \section{methodologies}
 TDD, BDD
 Scrum/Kanban
@@ -56,11 +63,56 @@ UX, UCD
 
 \section{synopsis}
 
-Full stack developer blended with client facing consultancy experience.
+Full stack engineer with consultancy and business experience.
 
-From stacking together a PC from salvaged parts to popular web applications, over the years I have absorbed technologies and systems making me a capable generalist. My thirst for learning endures, and I will continue to take knowledge hostage into the future. 
+I am an exceptional generalist, having experienced a swath of different technologies and project types. I take an immense joy in building great software that positively impacts the world and am an outspoken advocate for good software and team practices.
 
-When not sat behind a computer for work or for fun, I mostly climb rocks, fight heavy people, trek across the arctic and play guitar talentlessly.
+When not behind a computer, I climb rocks, dive oceans, fight people, run and play guitar talentlessly.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{employment}
+
+\begin{entrylist}
+
+\entry
+{2014-- 201\_ }
+{Six to Start}
+{London, United Kingdom}
+{\emph{Full Stack Engineer} \\ 
+For the last year and a half, I have been working to rapidly scale Six to Start's flagship fitness app, "Zombies, Run!", to its current 2.3 million users. \\
+Day to day, I architect and implement scalable back-end and front-end systems to serve a monumental amount of runners world wide, generate new developer platforms and procedures, build internal systems that help others produce content, and create fantastical marketing sites for new ventures. } 
+
+
+%------------------------------------------------
+\entry
+{2011-- 2014 }
+{Tessella}
+{Oxford, United Kingdom}
+{\emph{Software Engineer} \\
+During my time at Tessella, I had opportunities to work on an exceptional variety of development and consultancy projects across domains. This has ranged from designing and implementing large scale n-tier applications to analysing and advising on processes in the consumer industry.\\
+Internally, I championed new technologies and methodologies, as well as leading small teams and mentoring developers.} 
+%------------------------------------------------
+\entry
+{2010}
+{Deutsches Elektronen-Synchrotron}
+{Hamburg, Germany}
+{\emph{Particle Physicist} \\
+My efforts at the DESY institute focused on combining knowledge of physics and programming ability to contribute to an upcoming particle accelerator, the International Linear Collider. As part of my role, I regularly presented to international audiences to promote updates from the department and attended numerous specialised lectures.} 
+%------------------------------------------------
+\entry
+{2009--2010}
+{De La Rue}
+{London, United Kingdom}
+{\emph{Research and Development Scientist} \\
+De La Rue allowed me contribute to upcoming securityproducts across many areas of science. Throughout I developed my own ideas, mostly within the realm of software, but also within materials science and optics. \\
+Within the broader team, I participated in designing, prototyping and refining oncoming products, including work in holographics, polymer development, photonic crystals and printed electronics. }
+
+\end{entrylist}
+
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -77,113 +129,10 @@ When not sat behind a computer for work or for fun, I mostly climb rocks, fight 
 %------------------------------------------------
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{employment}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2011-- 201\_ }
-{Tessella}
-{Oxford, United Kingdom}
-{\emph{Analyst Developer} \\
-During my time at Tessella I have had opportunities to work on an exceptional variety of development and consultancy projects across domains. This has ranged from designing and implementing large scale n-tier applications to analysing and advising on processes in the consumer industry.\\
-Internally, I have championed new technologies and methodologies, as well as led small teams and mentoring developers.} 
-%------------------------------------------------
-\entry
-{2010}
-{Deutsches Elektronen-Synchrotron}
-{Hamburg, Germany}
-{\emph{Particle Physicist} \\
-My efforts at the DESY institute focused on combining knowledge of physics and programming ability to contribute to an upcoming particle accelerator, the International Linear Collider. As part of my role, I regularly gave presentations to international audiences to promote scientific updates from the department and attended numerous specialised lectures.} 
-%------------------------------------------------
-\entry
-{2009--2010}
-{De La Rue}
-{London, United Kingdom}
-{\emph{Research and Development Scientist} \\
-De La Rue allowed me contribute to upcoming security
-products across many areas of science. Throughout I developed my own ideas, mostly within the realm of software, but also within materials science and optics. \\
-Within the broader team, I participated in designing, prototyping and refining oncoming products, including work in holographics, polymer development, photonic crystals and printed electronics. }
-%------------------------------------------------
-\entry
-{2004-2010}
-{Various part time or short term employment}
-{Worldwide}
-{\emph{Various service positions} \\
-Number of roles during younger years ranging from park keeper to bar tender.}
-%------------------------------------------------
-\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	RELEVANT EXPERIENCE SKILLS SECTION
 %----------------------------------------------------------------------------------------
-
-\newpage
-\section{selection of relevant experience}
-This section would normally contain a selection of experience relevant to a particular position, but as this edition will be public available on the web, I have included a varied assortment of projects below instead. 
-
-\begin{projectentrylist}
-%------------------------------------------------
-\projectentry
-{Visualisation and data sandbox}
-{\emph{JavaScript, Python, D3, HTML5/CSS3, Bottle, Jasmine, SqlLite, UX} \\
-A national birth study of approximately 100,000 people over a number of years is currently occurring in the UK, driven by an academic institution. The scale of such a project was novel for the institute, and as a combination of consultant and developer I was brought in to see what I could offer to help.\\
-Once the domain and stakeholders were known, I decided that the most beneficial item for the study at that moment would be a model allowing them to quickly test possible study decisions. The impact of any decision on the study over time could then be reviewed and evaluated.  \\
-The intent was to provide the institute the power to not only quickly, but confidently make decisions in a time constrained environment. This was achieved through an application with a well designed, UX driven, front-end written in JavaScript. Users could  alter an extensive set of parameters by interacting with a number of intuitive D3 visualisations and other mechanisms. In tandem, a Python back-end handled all modelling calculations and server aspects. All computations and visualisations were driven in real-time, allowing the users to quickly play in a study "sandbox", tweaking the parameters, and instantly seeing the predicted study metrics and results over the next number of years. \\
-In addition to new decision driving capabilities,  thanks to diligent design efforts, the application found a secondary purpose as presentation tool for displaying figures and scenarios.}
-
-%------------------------------------------------
-\projectentry
-{Pharmaceutical portal}
-{\emph{C\#, MSSQL, Entity Framework, MVC4, nUnit, nSubstitute, WF, WCF, Unity, CI} \\
-The portal offers a number of services providing speciality pharmaceuticals, including
-a Global Access Program which is intended to provide unlicensed or trial-phase drugs
-to patients in need, internationally and domestically.\\
-A solution was required to handle
-requesting, validation, procurement, shipping and tracking of these drugs by health care
-professionals, via pharmaceutical suppliers, while fulfilling all necessary industry regulations. As the software gained clients, analytics and reporting were developed
-to aid in overseeing the complex pharmaceutical chain. \\
-A web-based application was created, by myself in a small scrum team, to satisfy these
-requirements. We used an MVVM architecture built on .Net’s MVC4 framework as the foundation and applied principles of agile, with rigorous unit testing and continuous integration testing throughout. \\
-The result is a highly accessible portal for users and clients, which automated several previously manual processes. This allowed the client to rapidly expand
-its program range with minimal additional effort.}
-%------------------------------------------------
-
-
-\projectentry
-{Particle accelerator sensor analysis and manipulation}
-{\emph{C++, Qt, CMake}\\
-Particle accelerators hold an array of sensors to detect various energies and particles present, numbering in the thousands. The state of the detectors has significant impact on the interpretation of any possible results, and therefore require management. \\
-I had sole responsibility of creating a system to visualise, review, manage these sensors which involved both an understanding of the physics at hand, as well as the software knowledge to integrate with the broader software suite being developed. All data processing was achieved through custom C++ libraries, and Qt was chosen to create the visualisations and user interface. 
-The project was completed and presented to an international audience. It is now primed to be used when the accelerator goes live in the future. }
-
-\projectentry
-{Image analysis suite}
-{\emph{Python, PIL, hardware hacking} \\
-During my time at this employer, a significant shift was going through the security printing industry which focused less on traditional chemistry in inks and watermarks and looked more towards advanced optical effects as deterrents to counterfeiting. \\
-Due to the traditional nature of the company, no programming and few quantitative data systems or processes existed. I proposed and spear-headed an image analysis suite that could output several metrics on the goodness of produced products, as well as checking for the viability of various new technologies. Technologically, this was achieved through a combination of python programming and hardware hacking with available supplies. \\
-This created a brand new automated quality assurance process, which allowed products relying on tighter tolerances to be manufactured, and gave the research division previously unavailable insights.}
-
-\projectentry
-{Domain name and SSL}
-{\emph{C\#, asp.Net WCF, Selenium, jUnit, nUnit, Oracle, PLSQL } \\
-This project consisted of two core tasks: the creation of a full-stack web application to allow users to manage their domains independently and inclusion of new Domain Name System Security Extensions (DNSSEC) to secure domains against more modern forms of malicious network attacks.
-\\
-The work involved alterations at the database level, writing packages to handle data directly into large currently existing Oracle systems  and front end user design. Alongside the application, a background web service was developed with WCF to allow other departments within the organisation to use the functionality of the application without having to write it themselves. All tasks were completed using continuous integration featuring both unit and front end testing.
-\\
-The application has proven popular, handling all certificate and domain name issues for the organisation, increasing their product range and allowing the organisation to free up a large number of resources for other critical projects.}
-
-\projectentry
-{Motion based music device} 
-{\emph{Java, Android, jUnit, Travis, Gradle} \\
-This project focused on the potential of modern smartphones to becomae musical instrument, owing to the large number of degrees of freedom being available through sensors such as accelerometers, gyroscopes, and multi-touch capacitive screens. \\
-I imagined, designed and implemented a prototype in which movements of the device affected the pitch, amplitude and resonance of the sounds generated. Initial feedback is positive which has paved the way for future development and a possible end product}
-
-\end{projectentrylist}
 
 
 %----------------------------------------------------------------------------------------
